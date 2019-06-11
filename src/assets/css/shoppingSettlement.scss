@@ -1,0 +1,172 @@
+#shoppingSettlement {
+    .bzinput {
+        padding: 0 20px;
+        display: none;
+    }
+    .step {
+        width: 483px;
+        height: 40px;
+        background: url(../../../static/img/step2.png);
+    }
+    padding-bottom: 100px;
+    .pege-title {
+        height: 40px;
+    }
+    .content {
+        ul {
+            border: 1px solid #DFDFDF;
+            font-size: 14px;
+            padding: 0px 22px 0px;
+            li:last-child {
+                border-bottom: none;
+            }
+            li {
+                padding-top: 10px;
+                border-bottom: 1px solid #DFDFDF;
+                .li-item {
+                    padding: 22px;
+                    .noaddress {
+                        font-size: 12px;
+                        color: #F76942;
+                    }
+                }
+                .li-btns {
+                    .psdate {
+                        padding-top: 20px;
+                        .btn:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .btn {
+                        border: 1px solid #ddd;
+                        position: relative;
+                        margin-right: 10px;
+                        background: #F3F3F3;
+                        .icon_duidui {
+                            height: 16px;
+                            width: 16px;
+                            background: url(../../../static/img/icon_duidui.png);
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            display: none;
+                        }
+                        #shop-btn {
+                            .shopbtn {
+                                height: 30px !important;
+                                color: #999999 !important;
+                                background: #F3F3F3 !important;
+                                border: 1px solid #F3F3F3 !important;
+                            }
+                        }
+                    }
+                    .btn.active {
+                        border: 1px solid #00C65D;
+                        .icon_duidui {
+                            display: block;
+                        }
+                        #shop-btn {
+                            .shopbtn {
+                                height: 28px !important;
+                                color: #00C65D !important;
+                                background: #fff !important;
+                                border: 1px solid #fff !important;
+                            }
+                        }
+                    }
+                }
+                .li-item-tiele {
+                    font-weight: bold;
+                    color: #666666;
+                    padding: 0 0 12px;
+                    border-bottom: 2px solid #F3F3F3;
+                }
+                .order-table {
+                    padding: 20px 0 0;
+                    .bzbtn {
+                        cursor: pointer;
+                    }
+                    .left {}
+                    .right {
+                        width: 944px;
+                        background: #F3FBFE;
+                        border: 1px solid #D5DEE2;
+                        table {
+                            thead {
+                                tr {
+                                    height: 40px;
+                                    text-align: center;
+                                    color: #666666;
+                                    border-bottom: 1px solid #D5DEE2;
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    height: 100px;
+                                    text-align: center;
+                                    border-bottom: 1px solid #D5DEE2;
+                                    .pro-img {
+                                        width: 60px;
+                                        height: 60px;
+                                        margin-right: 15px;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .pro-name {
+                                        margin-bottom: 5px;
+                                        font-weight: 600;
+                                    }
+                                    .pro-sku {
+                                        color: #666666;
+                                    }
+                                    .cuxbg {
+                                        width: 44px;
+                                        height: 16px;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        background: url(../../../static/img/img_box.png) no-repeat;
+                                        span {
+                                            margin-left: 6px;
+                                        }
+                                    }
+                                    .tbfoot {
+                                        padding: 0 20px;
+                                        .tbfoot-l {
+                                            width: 50%;
+                                            span {
+                                                width: 100px;
+                                            }
+                                        }
+                                        .tbfoot-r {
+                                            span {
+                                                font-size: 18px;
+                                                color: #F64811;
+                                            }
+                                        }
+                                    }
+                                }
+                                tr:last-child {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .total {
+            height: 80px;
+            background: #FEF8E1;
+            border: 1px solid #FBE1A3;
+            margin-top: 20px;
+            padding: 0 43px 0 24px;
+            .price {
+                font-size: 18px;
+                color: #F64811;
+                padding-left: 10px;
+            }
+        }
+    }
+}

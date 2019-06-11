@@ -1,0 +1,108 @@
+.el-checkbox {
+    margin-right: 10px;
+    .el-checkbox__inner {
+        width: 16px;
+        height: 16px;
+    }
+    .el-checkbox__inner::after {
+        width: 5px;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background-color: #00C65D;
+        border-color: #00C65D;
+    }
+    .el-checkbox__inner:hover {
+        border-color: #00C65D;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        border-color: #00C65D;
+    }
+    .el-checkbox__input.is-checked+.el-checkbox__label{
+        color: #00C65D;
+    }
+}
+
+.el-textarea__inner:focus {
+    border-color: #00C65D;
+}
+
+.el-input__inner:focus {
+    border-color: #00C65D;
+}
+
+//重新弹出层样式
+.el-dialog {
+    width: 680px !important;
+    .el-dialog__header {
+        padding: 0;
+        background: #222222;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 18px;
+        span {
+            color: #fff !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .el-dialog__headerbtn {
+            top: 0;
+            right: 18px;
+        }
+    }
+}
+
+.el-table {
+    th,
+    td {
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+
+
+/***
+ * 重写Tabs 
+ */
+
+.el-tabs__item:hover {
+    color: #00C65D !important;
+}
+
+.el-tabs__item {
+    font-size: 12px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+}
+
+.el-tabs__item.is-active {
+    color: #00C65D !important;
+}
+
+.el-tabs__active-bar {
+    background-color: #00C65D !important;
+}
+
+.el-tabs__nav-wrap::after {
+    background-color: #fff !important;
+}
+
+
+/***
+ * 分页
+ */
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #00C65D !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.active):hover {
+    color: #00C65D !important;
+}
+
+.el-popover{
+    max-height: 375px;
+    overflow-y: auto;
+}

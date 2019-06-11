@@ -1,0 +1,98 @@
+ul.store-list {
+  li {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    .store-info {
+      width: 399px;
+      border-right: 1px solid #ddd; // height: 300px;
+      padding: 18px;
+      .store-img {
+        width: 80px;
+        height: 80px;
+        margin-right: 18px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+      }
+      .store-name {
+        font-weight: 600;
+      }
+      p.store-mainsell {
+        font-size: 14px;
+        color: #6F6F6F;
+      }
+      .store-pingfen {
+        margin-top: 43px;
+				margin-bottom: 20px;
+      }
+      .store-text {
+        font-size: 14px;
+        color: #6F6F6F;
+				margin-bottom: 10px;
+      }
+			.store-address{
+				font-size: 14px;
+				color: #B1B1B1;
+				span{
+					padding-left: 10px;
+				}
+			}
+    }
+    .store-products {
+			position: relative;
+			padding: 20px;
+			width: 790px;
+			.mr15{
+				.pro-item{
+					margin-right: 17px;
+				}
+			}
+			.pro-list{
+				.pro-item{
+					border: 1px solid #ddd;
+					.pro-img{
+						width: 170px;
+						height: 170px;
+						// background: #000000;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.pro-price{
+						height: 30px;
+						padding-left: 10px;
+					}
+				}
+				.pro-item:last-child{
+					margin-right: 0;
+				}
+			}
+			.btns{
+				background: #FF4400;
+				height: 42px;
+				width: 307px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				color: #fff;
+				font-size: 14px;
+				.tac{
+					width: 153px;
+					height: 100%;
+					img{
+						margin-right: 10px;
+					}
+				}
+				.tac:last-child{
+					cursor: pointer;
+				}
+			}
+		}
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+}

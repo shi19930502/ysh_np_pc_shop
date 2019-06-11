@@ -1,0 +1,492 @@
+/**有效区域最小宽度*/
+
+html,
+body {
+  min-width: 1480px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.min-width {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.tac {
+  text-align: center;
+}
+
+
+
+/***
+ * a标签
+ */
+
+.click-a:hover {
+  color: #00C65D;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+/**
+ * 文字超长省略
+ */
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/**
+ * 英文数字自定换行
+ */
+
+.word-wrap {
+  word-wrap: break-word;
+}
+
+
+
+/**
+ * 右箭头
+ */
+
+.arrow-r {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+
+
+
+/**
+ * 左箭头
+ */
+
+.arrow-l {
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid #222;
+  border-left: 1px solid #222;
+  transform: rotate(45deg);
+}
+
+
+
+/**
+ * 下箭头 
+ */
+
+.arrow-b {
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  transform: rotate(45deg);
+}
+
+
+
+/**
+ * 选择框
+ */
+
+.checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../../../static/img/danxuankuang.png);
+  margin-right: 10px;
+}
+
+.checkboxed {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../../../static/img/danxuankuangact.png);
+  margin-right: 10px;
+}
+
+
+
+/**
+ * 带按钮footer
+ */
+
+.shop-settlement-footer {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #DFDFDF;
+  box-shadow: 0px 0px 8px rgba(41, 46, 11, 0.33);
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+  ul {
+    height: 100%;
+    .delbtn {
+      margin-left: 38px;
+      cursor: pointer;
+    }
+    .delbtn:hover {
+      color: #00C65D;
+      text-decoration: underline;
+    }
+    .back {
+      cursor: pointer;
+    }
+    li:nth-child(2) {
+      div {
+        margin-right: 40px;
+        strong {
+          font-size: 24px;
+          color: #F64811;
+        }
+      }
+    }
+  }
+}
+
+
+
+/**
+ * logo 搜索组件
+ */
+
+.shop-search {
+  height: 120px;
+  background: #fff;
+  ul {
+    li.logo {
+      cursor: pointer;
+      .logoimg {
+        width: 147;
+        height: 47px;
+        margin-right: 10px;
+      }
+			.logoimg-linyi {
+				width: 114px;
+				height: 77px;
+				margin-right: 10px;
+			}
+			.logoimg-yuexi {
+				width: 208px;
+				height: 78px;
+				margin-right: 10px;
+			}
+    }
+    li.search {
+      padding-top: 14px;
+      .search-box {
+        input::-webkit-input-placeholder {
+          color: #999;
+        }
+        input {
+          width: 396px;
+          height: 32px;
+          border: 2px solid #00C65D;
+          outline: none;
+          padding-left: 10px;
+          color: #999;
+          font-size: 14px;
+        }
+        span.searchtn {
+          cursor: pointer;
+          display: inline-block;
+          width: 80px;
+          height: 38px;
+          background: #00C65D;
+          color: #fff;
+          text-align: center;
+          line-height: 38px;
+          font-size: 16px;
+        }
+        .pros {
+          width: 480px;
+          margin-top: 5px;
+          div.key {
+            display: inline-block;
+            // width: 68px;
+            max-width: 50px;
+            font-size: 12px;
+            color: #999;
+            cursor: pointer;
+            padding: 0 5px;
+            position: relative;
+          }
+          div.key:hover {
+            color: #00C65D;
+            text-decoration: underline;
+          }
+          div.key::after{
+            width: 1px;
+            height: 12px;
+            background-color: #ccc;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -6px;
+            content: "";
+          }
+        }
+      }
+      .btns {
+        img {
+          margin-right: 10px;
+        }
+        .carbtn,
+        .userbtn {
+          border: #DFDFDF 1px solid;
+          height: 36px;
+          font-size: 12px;
+          color: #232321;
+          margin-left: 21px;
+          background: #F9F9F9;
+          cursor: pointer;
+        }
+        .carbtn {
+          width: 138px;
+        }
+        .userbtn {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/**
+ * 个人中心main
+ */
+
+.main {
+  .status-item {
+    strong {
+      height: 20px;
+      line-height: 20px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+    .el-input-group__append,
+    .input-with-select input {
+      border-radius: 0 !important;
+      border-color: #E5E5E5 !important;
+    }
+    .el-input-group__append {
+      background: #F9F9F9 !important;
+      .el-icon-search {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+/***
+ * 商品列表卡
+ */
+
+ul.pro-list {
+  flex-wrap: wrap;
+  padding: 10px 0 40px;
+  li {
+    background: #fff;
+    width: 226px;
+    height: 300px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    .item {
+      .pro-img {
+        width: 100%;
+        height: 166px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .pro-text {
+        padding: 0 10px;
+      }
+      .pro-price {
+        margin: 10px 0 10px;
+        .p1 {
+          font-size: 20px;
+          color: #FF541F;
+        }
+        .p2 {
+          color: #999999;
+          font-size: 12px;
+          text-decoration: line-through;
+        }
+        .cuxbg {
+          width: 44px;
+          height: 16px;
+          color: #fff;
+          font-size: 12px;
+          background: url(../../../static/img/img_box.png) no-repeat;
+          margin-left: 5px;
+          span {
+            margin-left: 6px;
+          }
+        }
+      }
+      .pro-name {
+        font-size: 14px;
+        margin: 0 0 3px;
+        font-weight: 600;
+      }
+      .pro-ms {
+        font-size: 12px;
+        color: #999999;
+      }
+      .pro-btns {
+        height: 26px;
+        border: 1px solid #DDDDDD;
+        border-radius: 2px;
+        margin-top: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        img {
+          border: none;
+          font-size: 0;
+        }
+        .scbtn {
+          height: 100%;
+          width: 83px;
+          border-right: 1px solid #DDDDDD;
+          img {
+            margin-right: 5px;
+          }
+        }
+        .addcarbtn {
+          height: 100%;
+          width: 122px;
+          color: #FF541F;
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  li:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+// 收搜框下面分类头
+.hide {
+  display: none;
+}
+
+.shop-classify-title {
+  .el-input__inner {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    width: 100%;
+  }
+  ul {
+    li:first-child {
+      .classify-title {
+        background: #222;
+        color: #fff;
+        font-size: 14px;
+        width: 180px;
+        text-align: center;
+        min-height: 30px;
+        margin-right: 20px;
+        padding: 10px;
+      }
+      .choosegys {
+        width: 150px;
+        font-size: 14px;
+        color: #222;
+        font-weight: bold;
+        .el-input.el-input--suffix {
+          input {
+            background: #fff !important;
+            border: none;
+          }
+          .el-icon-arrow-up:before {
+            color: #222 !important;
+          }
+        } //              span {
+        //                  margin-right: 10px;
+        //              }
+        //              div {
+        //                  margin-top: -4px;
+        //              }
+      }
+    }
+    li.logo {}
+    li.storeinf {
+      font-size: 14px;
+      .xinyt {
+        width: 66px;
+        height: 8px;
+        margin: 0 10px;
+        background: #FF541F;
+      }
+      .score {
+        color: #FF541F;
+      }
+      .lxmj {
+        margin: 0 20px;
+      }
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// .el-button--primary{
+//   background-color: #00C65D;
+//   border-color: #00C65D;
+// }
+// .el-button:focus, .el-button:hover {
+//     color: #409EFF;
+//     border-color: #c6e2ff;
+//     background-color: #ecf5ff;
+// }
+
+
+/***
+ * 滚动条简约样式
+ */
+
+// ::-webkit-scrollbar {
+//     width: 6px;
+//     height: 6px;
+// }
+// 
+// ::-webkit-scrollbar-track {
+//     background: #f6f6f6;
+//     border-radius: 2px;
+// }
+// 
+// ::-webkit-scrollbar-thumb {
+//     background: #aaa;
+//     border-radius: 2px;
+// }
+// 
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #747474;
+// }
+// 
+// ::-webkit-scrollbar-corner {
+//     background: #f6f6f6;
+// }
